@@ -1,0 +1,7 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Elections Canada logo card">
+  <rect width="1400" height="820" fill="#7f0019"/>
+  <rect x="220" y="230" width="960" height="360" fill="#ffffff"/>
+  <rect x="520" y="270" width="590" height="190" fill="#8f0044"/>
+  <polygon points="440,270 520,365 440,460 300,460 300,270" fill="#111111"/>
+  <text x="700" y="555" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="90" font-weight="700" fill="#000000">Elections Canada</text>
+</svg>

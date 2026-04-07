@@ -1,0 +1,27 @@
+<svg width="900" height="560" viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="House segmentation project visual">
+  <rect width="900" height="560" fill="#f2f2f2"/>
+  <rect x="24" y="24" width="852" height="512" fill="#ffffff" stroke="#2d2d2d" stroke-width="4"/>
+  <g transform="translate(42,62)">
+    <text x="120" y="0" fill="#2c2c2c" font-size="28" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Image</text>
+    <rect x="0" y="16" width="240" height="420" fill="#4f6f63"/>
+    <path d="M0 280 L240 120 L240 420 L0 420 Z" fill="#7fa38f"/>
+    <rect x="124" y="138" width="80" height="64" fill="#ad8a6b"/>
+    <rect x="18" y="336" width="222" height="84" fill="#101010"/>
+  </g>
+  <g transform="translate(330,62)">
+    <text x="120" y="0" fill="#2c2c2c" font-size="28" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Ground Truth</text>
+    <rect x="0" y="16" width="240" height="420" fill="#000000"/>
+    <rect x="62" y="92" width="148" height="98" fill="#f2f2f2"/>
+    <rect x="168" y="232" width="42" height="58" fill="#f2f2f2"/>
+    <rect x="114" y="312" width="62" height="52" fill="#f2f2f2"/>
+    <rect x="18" y="106" width="24" height="24" fill="#f2f2f2"/>
+  </g>
+  <g transform="translate(618,62)">
+    <text x="120" y="0" fill="#2c2c2c" font-size="28" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Prediction</text>
+    <rect x="0" y="16" width="240" height="420" fill="#000000"/>
+    <path d="M34 108 C64 80,106 92,114 126 C118 146,108 172,84 190 C54 212,20 198,16 166 C14 144,22 122,34 108 Z" fill="#f2f2f2"/>
+    <path d="M128 116 C168 86,230 106,232 164 C234 228,184 304,130 294 C94 286,70 250,72 214 C74 178,96 142,128 116 Z" fill="#f2f2f2"/>
+    <circle cx="178" cy="98" r="4" fill="#f2f2f2"/>
+    <circle cx="48" cy="240" r="3" fill="#f2f2f2"/>
+  </g>
+</svg>

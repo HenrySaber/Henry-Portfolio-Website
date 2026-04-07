@@ -1,0 +1,33 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Accessible project banner">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#153250"/>
+      <stop offset="100%" stop-color="#090d14"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g stroke="#2a7ee9" stroke-opacity="0.55" stroke-width="2" fill="none">
+    <path d="M30 110 L240 290 L490 220 L740 310 L1090 140"/>
+    <path d="M50 520 L250 380 L520 490 L760 420 L1090 600"/>
+    <path d="M160 80 L220 270 L450 110 L620 280 L880 220 L1020 410"/>
+  </g>
+  <g fill="#8ecbff" fill-opacity="0.9">
+    <circle cx="240" cy="290" r="5"/>
+    <circle cx="490" cy="220" r="5"/>
+    <circle cx="740" cy="310" r="5"/>
+    <circle cx="250" cy="380" r="5"/>
+    <circle cx="760" cy="420" r="5"/>
+    <circle cx="880" cy="220" r="5"/>
+    <circle cx="1020" cy="410" r="5"/>
+  </g>
+  <circle cx="600" cy="350" r="168" fill="none" stroke="#6bbfff" stroke-opacity="0.18" stroke-width="12"/>
+  <circle cx="600" cy="350" r="230" fill="none" stroke="#6bbfff" stroke-opacity="0.12" stroke-width="10"/>
+  <text x="600" y="390" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="114" fill="#f3fdff" filter="url(#glow)">Read-me.app</text>
+</svg>
