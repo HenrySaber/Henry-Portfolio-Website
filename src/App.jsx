@@ -104,6 +104,18 @@ const projects = [
     tags: ['Full-Stack', 'SQL', 'Web App'],
     className: 'project-card-gradient-5',
   },
+  {
+    title: 'MsgMe',
+    icon: '🔐',
+    description:
+      'End-to-end encrypted messaging app built for HackTheHill 2023. Leveraged Gun.js for 256-bit encryption and real-time peer-to-peer messaging. Won top 10 projects with smooth UX and rapid network performance.',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/HenrySaber/EncryptedMessages' },
+      { label: 'Devpost', href: 'https://devpost.com/software/msgme' },
+    ],
+    tags: ['Hackathon', 'React', 'Gun.js', 'Encryption', 'P2P'],
+    className: 'project-card-gradient-6',
+  },
 ];
 
 function App() {
@@ -116,6 +128,28 @@ function App() {
       contact: 'Contact',
       resume: 'CV',
       toggle: 'EN',
+      eyebrow_hero: 'Étudiant en Génie Logiciel · Constructeur Full-Stack',
+      hero_greeting: 'Hey, je suis Henry.',
+      hero_description: 'Je crée des expériences web réfléchies, des systèmes propres et des projets qui résolvent des problèmes réels. Ce site rassemble mon CV, mes travaux récents et les projets dont je suis le plus fier.',
+      view_projects: 'Voir les Projets',
+      get_in_touch: 'Me Contacter',
+      resume_website: 'Site de curriculum vitae',
+      about_title: 'A propos',
+      about_subtitle: 'Un constructeur concentré avec un souci de la présentation.',
+      about_p1: 'Je suis étudiant en génie logiciel à l\'Université d\'Ottawa, et j\'aime créer des produits pratiques, polis et faciles à utiliser. Mon travail va de l\'automatisation CI/CD et des flux de travail Docker aux outils UI accessibles et aux petites applications créatives.',
+      about_p2: 'Je m\'intéresse particulièrement au développement full-stack, aux pipelines de déploiement et à la création d\'interfaces qui semblent nettes sans sacrifier l\'utilisabilité.',
+      experience_title: 'Expérience',
+      experience_subtitle: 'Rôles sélectionnés.',
+      experience_hover: 'Survolez chaque carte d\'entreprise pour un aperçu rapide.',
+      visit_site: 'Visiter le site',
+      projects_title: 'Projets',
+      projects_subtitle: 'Travail sélectionné.',
+      projects_hover: 'Un mélange de pipelines de déploiement, d\'accessibilité et de prototypes d\'applications.',
+      contact_title: 'Contact',
+      contact_subtitle: 'Créons quelque chose d\'utile.',
+      contact_description: 'Vous avez un projet en tête? Envie de collaborer? Écrivez-moi — j\'adorerais vous entendre.',
+      email_me: 'M\'envoyer un e-mail',
+      top: 'Haut',
     }
     : {
       about: 'About',
@@ -123,6 +157,28 @@ function App() {
       contact: 'Contact',
       resume: 'Resume',
       toggle: 'FR',
+      eyebrow_hero: 'Software Engineering Student · Full-Stack Builder',
+      hero_greeting: 'Hey, I\'m Henry.',
+      hero_description: 'I build thoughtful web experiences, clean systems, and projects that solve real problems. This site brings together my resume, recent work, and the projects I\'m most proud of.',
+      view_projects: 'View Projects',
+      get_in_touch: 'Get in Touch',
+      resume_website: 'Resume website',
+      about_title: 'About',
+      about_subtitle: 'A focused builder with an eye for presentation.',
+      about_p1: 'I\'m a software engineering student at the University of Ottawa, and I like building products that are practical, polished, and easy to use. My work ranges from CI/CD automation and Docker workflows to accessible UI tools and small creative apps.',
+      about_p2: 'I\'m especially interested in full-stack development, deployment pipelines, and building interfaces that feel sharp without sacrificing usability.',
+      experience_title: 'Experience',
+      experience_subtitle: 'Selected roles.',
+      experience_hover: 'Hover each company card for a quick snapshot.',
+      visit_site: 'Visit site',
+      projects_title: 'Projects',
+      projects_subtitle: 'Selected work.',
+      projects_hover: 'A mix of deployment pipelines, accessibility, and app prototypes.',
+      contact_title: 'Contact',
+      contact_subtitle: 'Let\'s build something useful.',
+      contact_description: 'Have a project in mind? Want to collaborate? Drop me a line — I\'d love to hear from you.',
+      email_me: 'Email Me',
+      top: 'Top',
     };
 
   useEffect(() => {
@@ -159,7 +215,12 @@ function App() {
           <a href="#about">{navText.about}</a>
           <a href="#projects">{navText.projects}</a>
           <a href="#contact">{navText.contact}</a>
-          <a href="/HenrySaber-Resume.pdf" download="HenrySaber-Resume.pdf" aria-label="Download resume">
+          <a
+            href="https://docs.google.com/document/d/1LqoBEsCYebwJe3bkUK_RlZDRPGEtcnfA/edit?usp=sharing&ouid=110135800974956186894&rtpof=true&sd=true"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open resume in Google Docs"
+          >
             {navText.resume}
           </a>
           <button
@@ -176,18 +237,17 @@ function App() {
       <main>
         <section className="hero section" id="home">
           <div className="hero-copy reveal">
-            <p className="eyebrow">Software Engineering Student · Full-Stack Builder</p>
-            <h1>Hey, I&apos;m Henry.</h1>
+            <p className="eyebrow">{navText.eyebrow_hero}</p>
+            <h1>{navText.hero_greeting}</h1>
             <p className="hero-text">
-              I build thoughtful web experiences, clean systems, and projects that solve real problems.
-              This site brings together my resume, recent work, and the projects I’m most proud of.
+              {navText.hero_description}
             </p>
             <div className="hero-actions">
               <a className="button" href="#projects">
-                View Projects
+                {navText.view_projects}
               </a>
               <a className="button button-secondary" href="#contact">
-                Get in Touch
+                {navText.get_in_touch}
               </a>
             </div>
           </div>
@@ -210,7 +270,7 @@ function App() {
                 aria-label="Expand window preview"
               ></button>
             </div>
-            <div className="hero-badge">Resume website</div>
+            <div className="hero-badge">{navText.resume_website}</div>
             <div className="hero-visual">
               <div className="orb orb-one"></div>
               <div className="orb orb-two"></div>
@@ -224,16 +284,16 @@ function App() {
 
         <section className="section about reveal" id="about">
           <div className="section-heading">
-            <p className="eyebrow">About</p>
-            <h2>A focused builder with an eye for presentation.</h2>
+            <p className="eyebrow">{navText.about_title}</p>
+            <h2>{navText.about_subtitle}</h2>
           </div>
           <div className="about-grid">
             <article className="panel intro-panel">
               <p>
-                I’m a software engineering student at the University of Ottawa, and I like building products that are practical, polished, and easy to use. My work ranges from CI/CD automation and Docker workflows to accessible UI tools and small creative apps.
+                {navText.about_p1}
               </p>
               <p>
-                I’m especially interested in full-stack development, deployment pipelines, and building interfaces that feel sharp without sacrificing usability.
+                {navText.about_p2}
               </p>
             </article>
             <article className="panel stats-panel">
@@ -255,9 +315,9 @@ function App() {
 
         <section className="section experience reveal" id="experience">
           <div className="section-heading center">
-            <p className="eyebrow">Experience</p>
-            <h2>Selected roles.</h2>
-            <p className="section-subtitle">Hover each company card for a quick snapshot.</p>
+            <p className="eyebrow">{navText.experience_title}</p>
+            <h2>{navText.experience_subtitle}</h2>
+            <p className="section-subtitle">{navText.experience_hover}</p>
           </div>
 
           <div className="experience-grid">
@@ -275,7 +335,7 @@ function App() {
 
                 <div className="experience-footer">
                   <a className="experience-link" href={item.website} target="_blank" rel="noreferrer" aria-label={`Visit ${item.company} website`}>
-                    Visit site
+                    {navText.visit_site}
                   </a>
                   <div className="experience-tech-list">
                     {item.stack.map((tech) => (
@@ -297,9 +357,9 @@ function App() {
 
         <section className="section projects reveal" id="projects">
           <div className="section-heading center">
-            <p className="eyebrow">Projects</p>
-            <h2>Selected work.</h2>
-            <p className="section-subtitle">A mix of deployment pipelines, accessibility, and app prototypes.</p>
+            <p className="eyebrow">{navText.projects_title}</p>
+            <h2>{navText.projects_subtitle}</h2>
+            <p className="section-subtitle">{navText.projects_hover}</p>
           </div>
 
           <div className="project-grid">
@@ -349,18 +409,18 @@ function App() {
         <section className="section contact reveal" id="contact">
           <div className="contact-panel">
             <div>
-              <p className="eyebrow">Contact</p>
-              <h2>Let’s build something useful.</h2>
+              <p className="eyebrow">{navText.contact_title}</p>
+              <h2>{navText.contact_subtitle}</h2>
               <p>
-                If you want the site adjusted to match your resume exactly, send the ReadMe link and I’ll wire it in.
+                {navText.contact_description}
               </p>
             </div>
             <div className="contact-actions">
-              <a className="button" href="mailto:henry@example.com">
-                Email Me
+              <a className="button" href="mailto:henry.saber026@gmail.com">
+                {navText.email_me}
               </a>
               <a className="button button-secondary" href="#home">
-                Top
+                {navText.top}
               </a>
             </div>
           </div>
