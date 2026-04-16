@@ -840,6 +840,7 @@ a {
 .project-card-gradient-3 .project-art { background: linear-gradient(135deg, #1b4f7a, #0f1d2d 70%, #2a7bd0); }
 .project-card-gradient-4 .project-art { background: linear-gradient(135deg, #0d4f4c, #346b58 55%, #143b37); }
 .project-card-gradient-5 .project-art { background: linear-gradient(135deg, #3d1e5c, #6a4ca6 55%, #2d427f); }
+.project-card-gradient-6 .project-art { background: linear-gradient(135deg, #1a1a2e, #16213e 55%, #0f3460); }
 
 .project-art-hungry .project-art-title,
 .project-art-accessible .project-art-title,
