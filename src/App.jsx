@@ -216,7 +216,7 @@ function App() {
           <a href="#projects">{navText.projects}</a>
           <a href="#contact">{navText.contact}</a>
           <a
-            href="https://drive.google.com/file/d/116DdGiJI4j1x98wTCRJroqQ5P6Usv9dG/view?usp=sharing"
+            href="https://drive.google.com/file/d/13g4htFSfY8ueVKZyp3e4W3aq8HnNB1RG/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             aria-label="Open resume in Google Docs"
